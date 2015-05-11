@@ -1,5 +1,4 @@
 drop table member;
-
 drop sequence member_no_seq;
 
 CREATE TABLE member

@@ -15,13 +15,13 @@ public class JoinAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response)
-			throws SQLException, ClassNotFoundException, ServletException,
-			IOException {
-		// TODO Auto-generated method stub
-		String name = request.getParameter("name");
-		String email = request.getParameter("email");
-		String password = request.getParameter("password");
-		String gender = request.getParameter("gender");
+		throws SQLException, ClassNotFoundException, ServletException,
+		IOException {
+		
+		String name = request.getParameter( "name" );
+		String email = request.getParameter( "email" );
+		String password = request.getParameter( "password" );
+		String gender = request.getParameter( "gender" );
 		
 		MemberVo vo = new MemberVo();
 		vo.setName(name);
@@ -32,7 +32,6 @@ public class JoinAction implements Action {
 		MemberDao dao = new MemberDao();
 		dao.insert(vo);
 		
-		response.sendRedirect("/mysite/member?a=joinsuccess");
+		response.sendRedirect( "/mysite/member?a=joinsuccess" );
 	}
-
 }

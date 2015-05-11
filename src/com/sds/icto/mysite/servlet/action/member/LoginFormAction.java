@@ -16,8 +16,6 @@ public class LoginFormAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ClassNotFoundException, ServletException,
 			IOException {
-		// TODO Auto-generated method stub
 		WebUtil.forward("/views/member/loginform.jsp", request, response);
 	}
-
 }

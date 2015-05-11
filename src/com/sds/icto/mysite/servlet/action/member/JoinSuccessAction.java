@@ -16,8 +16,7 @@ public class JoinSuccessAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ClassNotFoundException, ServletException,
 			IOException {
-		// TODO Auto-generated method stub
-		WebUtil.forward("views/member/joinsuccess.jsp", request, response);
+		WebUtil.forward("/views/member/joinsuccess.jsp", request, response);
 	}
 
 }

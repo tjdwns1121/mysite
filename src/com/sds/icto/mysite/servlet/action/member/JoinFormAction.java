@@ -16,8 +16,6 @@ public class JoinFormAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ClassNotFoundException, ServletException,
 			IOException {
-		// TODO Auto-generated method stub
-		WebUtil.forward("/views/member/joinform.jsp", request, response);
+		WebUtil.forward( "/views/member/joinform.jsp" , request, response);
 	}
-
 }

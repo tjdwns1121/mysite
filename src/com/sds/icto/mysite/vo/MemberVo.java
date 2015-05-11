@@ -1,13 +1,11 @@
 package com.sds.icto.mysite.vo;
 
 public class MemberVo {
-	
 	private Long no;
 	private String name;
 	private String email;
 	private String password;
 	private String gender;
-	
 	public Long getNo() {
 		return no;
 	}
@@ -38,5 +36,4 @@ public class MemberVo {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	
 }

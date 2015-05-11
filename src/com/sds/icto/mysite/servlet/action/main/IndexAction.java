@@ -16,9 +16,10 @@ public class IndexAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ClassNotFoundException, ServletException,
 			IOException {
-
-		WebUtil.forward("views/main/index.jsp", request, response);
-
+		WebUtil.forward( 
+			"/views/main/index.jsp" ,
+			request,
+			response );
 	}
 
 }

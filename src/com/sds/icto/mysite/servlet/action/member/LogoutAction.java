@@ -9,18 +9,17 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.sds.icto.web.Action;
-import com.sds.icto.web.WebUtil;
 
 public class LogoutAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response)
-			throws SQLException, ClassNotFoundException, ServletException,
-			IOException {
-		// TODO Auto-generated method stub
-		HttpSession session = request.getSession(false);
-		session.removeAttribute("authMember");
-		session.invalidate();			
+		throws SQLException, ClassNotFoundException, ServletException,
+		IOException {
+		
+		HttpSession session = request.getSession( false );
+		session.removeAttribute( "authMember" );
+		session.invalidate();
 		
 		response.sendRedirect( "/mysite" );
 	}
