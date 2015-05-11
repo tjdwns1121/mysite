@@ -1,11 +1,5 @@
-<%@ page import="com.sds.icto.mysite.dao.*" %>
-<%@ page import="com.sds.icto.mysite.vo.*" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="java.util.List" %>
-<%
-	GuestbookDao dao = new GuestbookDao();
-	List<GuestbookVo> list = dao.fetchList(); 
-%>
 <!doctype html>
 <html>
 <head>
@@ -35,11 +29,6 @@
 						</tr>
 					</table>
 				</form>
-				<%
-		int index = 0;
-		for (GuestbookVo vo : list) {
-			index++;
-	%>
 				<ul>
 					<li>
 						<table>
@@ -47,7 +36,7 @@
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><a href="deleteform.jsp?no=<%= vo.getNo()%>">삭제</a></td>
+								<td><a href="">삭제</a></td>
 							</tr>
 							<tr>
 								<td colspan=4></td>
