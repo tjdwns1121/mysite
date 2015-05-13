@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4장 간단한 회원 가입폼</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "맑은 고딕";
+	font-size: 0.75em;
+	color: #333;
+}
+#password-form{
+	margin : 10px 0 0 250px;
+}
+#write-form{
+width:400px;
+height:500px;
+border:2px solid #000;
+margin:100px 0 0 0;
+margin-left:200px;
+}
+
+#write-form input[type='text']{
+width:400px;
+height:500px;
+}
+
+input[type='password']{
+	
+	padding:5px 0;
+	padding-left : 5px;
+	border:1px solid #f00;
+	background-color:#fff;	
+}
+
+
+</style>
+</head>
+<body>
+
+	<form id="write-form" method="get">	 
+		<input name="content" type="text">				 
+		
+	</form>
+	<form id="password-form" method="get">
+		 비밀번호
+		<input name="password" type="password">
+				 
+		<input type="submit" value="저장">
+	</form>
+</body>
+</html>
